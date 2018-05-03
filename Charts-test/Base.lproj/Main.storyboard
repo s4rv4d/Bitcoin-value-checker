@@ -20,17 +20,36 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7l-lv-MZx" userLabel="TopBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIk-PB-xP9">
+                                        <rect key="frame" x="8" y="25" width="141" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvB-6O-u9m">
+                                        <rect key="frame" x="157" y="29" width="178" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCW-C8-ME0" userLabel="BottomBar">
                                 <rect key="frame" x="0.0" y="140" width="375" height="527"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.3809663955479452" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-Ac-ZHj">
                                 <rect key="frame" x="16" y="91" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switched:" destination="BYZ-38-t0r" eventType="valueChanged" id="d8d-3R-5kj"/>
+                                </connections>
                             </switch>
                         </subviews>
-                        <color key="backgroundColor" red="0.0070848632600000001" green="0.1245407239" blue="0.2903544307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aCW-C8-ME0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="690-V7-DTE"/>
                             <constraint firstItem="SPz-Ac-ZHj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="91" id="9at-Dq-R5Z"/>
@@ -45,10 +64,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomBar" destination="aCW-C8-ME0" id="VfC-z2-YlF"/>
+                        <outlet property="currentRateValue" destination="HvB-6O-u9m" id="TOl-QV-SEJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.799999999999997" y="52.623688155922046"/>
+            <point key="canvasLocation" x="237.59999999999999" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

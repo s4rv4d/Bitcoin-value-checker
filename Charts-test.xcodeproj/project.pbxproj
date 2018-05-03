@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05D6545E5491FFE05089D1CF /* Pods_Charts_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2740896A3391981E714030 /* Pods_Charts_test.framework */; };
+		40798903209B920F00DAF70B /* colorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40798902209B920F00DAF70B /* colorHelper.swift */; };
 		40D50023209B45D200DC390E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D50022209B45D200DC390E /* AppDelegate.swift */; };
 		40D50025209B45D200DC390E /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D50024209B45D200DC390E /* MainVc.swift */; };
 		40D50028209B45D200DC390E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D50026209B45D200DC390E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		1E4B3E108C7C019EFA111E55 /* Pods-Charts-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charts-test/Pods-Charts-test.release.xcconfig"; sourceTree = "<group>"; };
+		40798902209B920F00DAF70B /* colorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorHelper.swift; sourceTree = "<group>"; };
 		40D5001F209B45D200DC390E /* Charts-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D50022209B45D200DC390E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40D50024209B45D200DC390E /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				40D50022209B45D200DC390E /* AppDelegate.swift */,
 				40D50024209B45D200DC390E /* MainVc.swift */,
+				40798902209B920F00DAF70B /* colorHelper.swift */,
 				40D50026209B45D200DC390E /* Main.storyboard */,
 				40D50029209B45D500DC390E /* Assets.xcassets */,
 				40D5002B209B45D500DC390E /* LaunchScreen.storyboard */,
@@ -183,16 +186,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Charts-test/Pods-Charts-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,6 +213,7 @@
 			files = (
 				40D50025209B45D200DC390E /* MainVc.swift in Sources */,
 				40D50023209B45D200DC390E /* AppDelegate.swift in Sources */,
+				40798903209B920F00DAF70B /* colorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,13 +361,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = "Charts-test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Charts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,13 +377,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = "Charts-test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Charts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
