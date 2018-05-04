@@ -38,28 +38,28 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCW-C8-ME0" userLabel="BottomBar">
-                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
-                                <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.3809663955479452" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-Ac-ZHj">
                                 <rect key="frame" x="16" y="91" width="51" height="31"/>
                                 <connections>
                                     <action selector="switched:" destination="BYZ-38-t0r" eventType="valueChanged" id="d8d-3R-5kj"/>
                                 </connections>
                             </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCW-C8-ME0" userLabel="BottomBar" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="16" y="369" width="343" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.3809663955479452" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="690-V7-DTE"/>
+                            <constraint firstItem="aCW-C8-ME0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="690-V7-DTE"/>
                             <constraint firstItem="SPz-Ac-ZHj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="91" id="9at-Dq-R5Z"/>
                             <constraint firstItem="SPz-Ac-ZHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fhf-fl-4G0"/>
                             <constraint firstItem="l7l-lv-MZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wft-qS-kSt"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="top" secondItem="SPz-Ac-ZHj" secondAttribute="bottom" constant="18" id="ZOS-er-rbV"/>
+                            <constraint firstItem="aCW-C8-ME0" firstAttribute="top" secondItem="SPz-Ac-ZHj" secondAttribute="bottom" constant="247" id="ZOS-er-rbV"/>
                             <constraint firstItem="l7l-lv-MZx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="adO-IJ-zBf"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ipE-HT-30d"/>
+                            <constraint firstItem="aCW-C8-ME0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ipE-HT-30d"/>
                             <constraint firstItem="l7l-lv-MZx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oEs-Kd-jJw"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="u70-5f-lkH"/>
+                            <constraint firstItem="aCW-C8-ME0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-98" id="u70-5f-lkH"/>
                             <constraint firstItem="SPz-Ac-ZHj" firstAttribute="top" secondItem="l7l-lv-MZx" secondAttribute="bottom" constant="20" id="u75-jK-lGo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="-248" y="71"/>
         </scene>
     </scenes>
 </document>
