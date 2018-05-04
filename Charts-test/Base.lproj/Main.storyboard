@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ys-lB-U2B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Vc-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVc" customModule="Charts_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1828" y="-417"/>
+        </scene>
+        <!--Main Vc-->
+        <scene sceneID="dbb-1f-zg9">
+            <objects>
+                <viewController id="4Ys-lB-U2B" customClass="MainVc" customModule="Charts_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XsB-o3-9Nc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7l-lv-MZx" userLabel="TopBar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbj-Xc-2yH" userLabel="TopBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIk-PB-xP9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJd-n6-Ize">
                                         <rect key="frame" x="8" y="25" width="141" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvB-6O-u9m">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKW-Li-nCa">
                                         <rect key="frame" x="157" y="29" width="178" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
@@ -38,40 +54,40 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-Ac-ZHj">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8K-bW-Brj">
                                 <rect key="frame" x="16" y="91" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switched:" destination="BYZ-38-t0r" eventType="valueChanged" id="d8d-3R-5kj"/>
+                                    <action selector="switched:" destination="4Ys-lB-U2B" eventType="valueChanged" id="4nK-9M-a0L"/>
                                 </connections>
                             </switch>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCW-C8-ME0" userLabel="BottomBar" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="16" y="369" width="343" height="200"/>
-                                <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="0.3809663955479452" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-xW-bQW" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="16" y="157" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="690-V7-DTE"/>
-                            <constraint firstItem="SPz-Ac-ZHj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="91" id="9at-Dq-R5Z"/>
-                            <constraint firstItem="SPz-Ac-ZHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fhf-fl-4G0"/>
-                            <constraint firstItem="l7l-lv-MZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wft-qS-kSt"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="top" secondItem="SPz-Ac-ZHj" secondAttribute="bottom" constant="247" id="ZOS-er-rbV"/>
-                            <constraint firstItem="l7l-lv-MZx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="adO-IJ-zBf"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ipE-HT-30d"/>
-                            <constraint firstItem="l7l-lv-MZx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oEs-Kd-jJw"/>
-                            <constraint firstItem="aCW-C8-ME0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-98" id="u70-5f-lkH"/>
-                            <constraint firstItem="SPz-Ac-ZHj" firstAttribute="top" secondItem="l7l-lv-MZx" secondAttribute="bottom" constant="20" id="u75-jK-lGo"/>
+                            <constraint firstItem="g8K-bW-Brj" firstAttribute="top" secondItem="cbj-Xc-2yH" secondAttribute="bottom" constant="20" id="0Ev-dB-mw3"/>
+                            <constraint firstItem="ozI-xW-bQW" firstAttribute="top" secondItem="g8K-bW-Brj" secondAttribute="bottom" constant="35" id="3Mq-4M-Wde"/>
+                            <constraint firstItem="g8K-bW-Brj" firstAttribute="leading" secondItem="ozI-xW-bQW" secondAttribute="leading" id="5sv-ny-3hp"/>
+                            <constraint firstItem="cbj-Xc-2yH" firstAttribute="leading" secondItem="XsB-o3-9Nc" secondAttribute="leading" id="HdZ-aZ-H0G"/>
+                            <constraint firstItem="g8K-bW-Brj" firstAttribute="top" secondItem="XsB-o3-9Nc" secondAttribute="top" constant="91" id="Kxk-DU-VTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="cbj-Xc-2yH" secondAttribute="trailing" id="WDX-U5-dZS"/>
+                            <constraint firstItem="cbj-Xc-2yH" firstAttribute="top" secondItem="XsB-o3-9Nc" secondAttribute="top" id="noR-rq-DtT"/>
+                            <constraint firstItem="cbj-Xc-2yH" firstAttribute="centerX" secondItem="ozI-xW-bQW" secondAttribute="centerX" id="s00-og-qoy"/>
+                            <constraint firstItem="fNU-x2-eNm" firstAttribute="bottom" secondItem="ozI-xW-bQW" secondAttribute="bottom" constant="308" id="xf1-rc-r9Z"/>
+                            <constraint firstItem="g8K-bW-Brj" firstAttribute="leading" secondItem="XsB-o3-9Nc" secondAttribute="leadingMargin" id="zEM-ZU-FTd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="fNU-x2-eNm"/>
                     </view>
                     <connections>
-                        <outlet property="bottomBar" destination="aCW-C8-ME0" id="VfC-z2-YlF"/>
-                        <outlet property="currentRateValue" destination="HvB-6O-u9m" id="TOl-QV-SEJ"/>
+                        <outlet property="chart" destination="ozI-xW-bQW" id="0FE-fI-3Oe"/>
+                        <outlet property="currentRateValue" destination="WKW-Li-nCa" id="Tl6-xz-toQ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jo0-TR-75s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-248" y="71"/>
+            <point key="canvasLocation" x="-2527" y="-313"/>
         </scene>
     </scenes>
 </document>

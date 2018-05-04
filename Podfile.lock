@@ -14,14 +14,6 @@ DEPENDENCIES:
   - SwiftChart
   - SwiftyJSON
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Alamofire
-    - Realm
-    - RealmSwift
-    - SwiftChart
-    - SwiftyJSON
-
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
@@ -31,4 +23,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8c7588be0ecf1a9b7f22dc61f51b359383eb049e
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0

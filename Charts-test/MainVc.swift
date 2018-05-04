@@ -15,7 +15,8 @@ class MainVc: UIViewController {
    
     //MARK:IBOutlets
     @IBOutlet weak var currentRateValue: UILabel!
-    @IBOutlet weak var bottomBar: Chart!
+//    @IBOutlet weak var bottomBar: Chart!
+    @IBOutlet weak var chart: Chart!
     
     //MARK:Variables
     var graphDataArray:[GraphData] = []
@@ -64,22 +65,24 @@ class MainVc: UIViewController {
             let dtFormatter2 = DateFormatter()
             dtFormatter2.dateFormat = "MM"
             let month = Int(dtFormatter2.string(from: (iosDate as? Date)!))!
-            print(month)
+
             let monthAsStrings:String = dtFormatter2.monthSymbols[month - 1]
             if(monthLabels.count == 0 || monthLabels.last != monthAsStrings && monthLabels.first != monthAsStrings ){
                 monthLabels.append(monthAsStrings)
                 monthLabelCount.append(Double(month))
             }
             let series = ChartSeries(value)
+            series.color = UIColor.cyan
             series.area = true
             
             //Configure chart layout
            
-            bottomBar.lineWidth = 0.5
-            bottomBar.labelFont = UIFont.systemFont(ofSize: 12)
-            bottomBar.yLabelsOnRightSide = false
-            bottomBar.minY = value.min()! - 5
-            bottomBar.add(series)
+            chart.lineWidth = 0.5
+            chart.labelFont = UIFont.systemFont(ofSize: 12)
+            chart.yLabelsOnRightSide = false
+            chart.minY = value.min()! - 5
+            chart.removeAllSeries()
+            chart.add(series)
             
         }
     }
