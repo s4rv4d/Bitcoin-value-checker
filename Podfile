@@ -10,5 +10,6 @@ target 'Charts-test' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'RealmSwift'
+  pod 'UICountingLabel'
 
 end

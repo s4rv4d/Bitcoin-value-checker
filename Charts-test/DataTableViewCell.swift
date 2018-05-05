@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import UICountingLabel
 
 class DataTableViewCell: UITableViewCell {
 
     //MARK:IBOutlets
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var value: UILabel!
+    @IBOutlet weak var date: UICountingLabel!
+    @IBOutlet weak var value: UICountingLabel!
+//    self.currentValue.method = .linear
+//    self.currentValue.format = "%.2f%"
+//    self.currentValue.countFromZero(to: CGFloat(floatData))
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

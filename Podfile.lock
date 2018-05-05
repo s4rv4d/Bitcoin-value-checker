@@ -7,12 +7,14 @@ PODS:
     - Realm (= 3.5.0)
   - SwiftChart (1.0.1)
   - SwiftyJSON (4.1.0)
+  - UICountingLabel (1.4.1)
 
 DEPENDENCIES:
   - Alamofire
   - RealmSwift
   - SwiftChart
   - SwiftyJSON
+  - UICountingLabel
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -20,7 +22,8 @@ SPEC CHECKSUMS:
   RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
 
-PODFILE CHECKSUM: 8c7588be0ecf1a9b7f22dc61f51b359383eb049e
+PODFILE CHECKSUM: 104596496b3c53e8849c8ed08adea7d7e94ef184
 
 COCOAPODS: 1.4.0
