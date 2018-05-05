@@ -10,6 +10,7 @@
 		05D6545E5491FFE05089D1CF /* Pods_Charts_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2740896A3391981E714030 /* Pods_Charts_test.framework */; };
 		40798903209B920F00DAF70B /* colorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40798902209B920F00DAF70B /* colorHelper.swift */; };
 		40A1757B209BA681005736A0 /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1757A209BA681005736A0 /* GraphData.swift */; };
+		40A1757D209D7762005736A0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1757C209D7762005736A0 /* DataTableViewCell.swift */; };
 		40D50023209B45D200DC390E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D50022209B45D200DC390E /* AppDelegate.swift */; };
 		40D50025209B45D200DC390E /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D50024209B45D200DC390E /* MainVc.swift */; };
 		40D50028209B45D200DC390E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D50026209B45D200DC390E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		1E4B3E108C7C019EFA111E55 /* Pods-Charts-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charts-test/Pods-Charts-test.release.xcconfig"; sourceTree = "<group>"; };
 		40798902209B920F00DAF70B /* colorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorHelper.swift; sourceTree = "<group>"; };
 		40A1757A209BA681005736A0 /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
+		40A1757C209D7762005736A0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		40D5001F209B45D200DC390E /* Charts-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D50022209B45D200DC390E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40D50024209B45D200DC390E /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
@@ -67,12 +69,13 @@
 			children = (
 				40D50022209B45D200DC390E /* AppDelegate.swift */,
 				40D50024209B45D200DC390E /* MainVc.swift */,
+				40A1757A209BA681005736A0 /* GraphData.swift */,
+				40A1757C209D7762005736A0 /* DataTableViewCell.swift */,
 				40798902209B920F00DAF70B /* colorHelper.swift */,
 				40D50026209B45D200DC390E /* Main.storyboard */,
 				40D50029209B45D500DC390E /* Assets.xcassets */,
 				40D5002B209B45D500DC390E /* LaunchScreen.storyboard */,
 				40D5002E209B45D500DC390E /* Info.plist */,
-				40A1757A209BA681005736A0 /* GraphData.swift */,
 			);
 			path = "Charts-test";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				40D50025209B45D200DC390E /* MainVc.swift in Sources */,
 				40D50023209B45D200DC390E /* AppDelegate.swift in Sources */,
+				40A1757D209D7762005736A0 /* DataTableViewCell.swift in Sources */,
 				40A1757B209BA681005736A0 /* GraphData.swift in Sources */,
 				40798903209B920F00DAF70B /* colorHelper.swift in Sources */,
 			);
@@ -381,7 +385,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = "Charts-test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Charts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -397,7 +404,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4FDL334LZ;
 				INFOPLIST_FILE = "Charts-test/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sarvad-Shetty.Charts-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
